@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/csye6225-webapp
+permissions:
+  - object: /home/ubuntu
+    owner: ubuntu
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeInstall.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/afterInstall.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/appStart.sh
+      timeout: 300
+      runas: ubuntu

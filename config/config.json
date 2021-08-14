@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "aishwarya",
+    "password": "Ash@0204",
+    "database": "web_s3_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "s3_bucket": "assignmenttestbucket",
+    "AWS_ID":"AKIAYZCPJONLQR3DBEFX",
+    "AWS_SECRET":"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",
+    "AWS_BUCKET_NAME":"assignmenttestbucket"
+    }
+}
+
+
+  
